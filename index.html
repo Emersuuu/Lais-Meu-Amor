@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Amor - Dia dos Namorados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hearts-background"></div>
+    
+    <!-- Corações flutuantes -->
+    <div class="floating-heart heart-1">💖</div>
+    <div class="floating-heart heart-2">💖</div>
+    <div class="floating-heart heart-3">💖</div>
+    <div class="floating-heart heart-4">💖</div>
+    <div class="floating-heart heart-5">💖</div>
+    <div class="floating-heart heart-6">💖</div>
+    <div class="floating-heart heart-7">💖</div>
+    <div class="floating-heart heart-8">💖</div>
+    
+    <!-- Corações caindo -->
+    <div class="falling-heart fall-1">💖</div>
+    <div class="falling-heart fall-2">💖</div>
+    <div class="falling-heart fall-3">💖</div>
+    <div class="falling-heart fall-4">💖</div>
+    <div class="falling-heart fall-5">💖</div>
+    <div class="falling-heart fall-6">💖</div>
+    <div class="falling-heart fall-7">💖</div>
+    <div class="falling-heart fall-8">💖</div>
+    
+    <div class="container">
+        <!-- Player de Música -->
+        <div class="music-player">
+            <div class="music-info">
+                <span class="song-title" id="displaySongTitle">d4vd - Here With Me</span>
+                <span class="artist-name" id="displayArtistName">Official Music Video</span>
+            </div>
+            <div class="music-controls">
+                <button id="playPauseBtn">▶</button>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+
+        <h1>Nosso Amor</h1>
+        
+        <!-- Área de Imagem -->
+        <div class="image-container">
+            <img id="mainImage" src="LaisEmersoneErick.jpg" alt="Nossa foto" style="display: block;">
+        </div>
+
+        <!-- Área de Mensagem Editável -->
+        <div class="message-editor">
+            <textarea id="customMessage" placeholder="Digite sua mensagem personalizada aqui...">Sempre tive ânsia de te conhecer, não sabia seu nome, tampouco sua aparência, mas sempre, sempre sempre, esperei por você. E nunca terei o tédio de lhe possuir. 10 meses, 1 semana, 5 dias e contando... Que esse contador ai em baixo, não se encerre até que a morte nós separe meu bem. Te amo, minha menina veia 💖💕💗💓💝💘💟💌</textarea>
+        </div>
+        
+        <!-- Contador Simples -->
+        <div class="countdown-display">
+            <div class="countdown-text">Eu te amo há:</div>
+            <div class="countdown-numbers">
+                <span id="years">0</span> anos, 
+                <span id="months">0</span> meses, 
+                <span id="weeks">0</span> semanas, 
+                <span id="days">0</span> dias, 
+                <span id="hours">0</span> horas, 
+                <span id="minutes">0</span> minutos e 
+                <span id="seconds">0</span> segundos
+            </div>
+        </div>
+    </div>
+
+    <audio id="audioPlayer" loop autoplay src="d4vd-HereWithMe[OfficialMusicVideo].mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
